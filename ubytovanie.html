@@ -1,133 +1,244 @@
 <!DOCTYPE html>
-<html lang="sk">
+<html lang="sk" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ubytovanie - Vila Falco</title>
-    <meta name="description" content="Priestranné izby s kompletným vybavením v srdci Vysokých Tatier.">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- =========================================================
+       SEO: názov a popis tejto stránky (zobrazuje Google)
+       ========================================================= -->
+  <title>Ubytovanie – Vila Falco, Horný Smokovec</title>
+  <meta name="description" content="Priestranné izby s kompletným vybavením v srdci Vysokých Tatier.">
+  <link rel="canonical" href="https://vilafalco.sk/ubytovanie.html">
+
+  <!-- Náhľad pri zdieľaní odkazu (Facebook, WhatsApp, Messenger…) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:site_name" content="Vila Falco">
+  <meta property="og:title" content="Ubytovanie vo Vile Falco">
+  <meta property="og:description" content="Priestranné izby s kompletným vybavením v srdci Vysokých Tatier.">
+  <meta property="og:url" content="https://vilafalco.sk/ubytovanie.html">
+  <meta property="og:image" content="https://vilafalco.sk/fotky/izba-s-balkonom.jpg">
+
+  <!-- Ikony stránky (favicon) -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#2E4A5E">
+
+  <!-- Písma a štýly -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="nav-container">
-        <nav>
-            <a href="index.html" class="logo">Vila Falco</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Domov</a></li>
-                <li><a href="ubytovanie.html" class="active">Ubytovanie</a></li>
-                <li><a href="lokalita.html">Lokalita</a></li>
-                <li><a href="cennik.html">Cenník</a></li>
-                <li><a href="rezervacia.html">Rezervácia</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
+  <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
+
+  <!-- =========================================================
+       HLAVIČKA – rovnaká na všetkých stránkach.
+       Pri zmene menu ju upravte na každej stránke.
+       aria-current="page" označuje stránku, na ktorej ste.
+       ========================================================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="Vila Falco, Horný Smokovec – úvodná stránka">
+        <img src="vila-falco-badge.svg" alt="" class="brand-badge" width="200" height="174">
+        <span class="brand-text" aria-hidden="true">
+          <span class="brand-name">Vila Falco</span>
+          <span class="brand-place">Horný Smokovec</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="hlavne-menu">
+        <span class="menu-toggle-bars" aria-hidden="true"></span>
+        Menu
+      </button>
+
+      <nav id="hlavne-menu" class="main-nav" aria-label="Hlavné menu">
+        <ul>
+          <li><a href="index.html">Domov</a></li>
+          <li><a href="ubytovanie.html" aria-current="page">Ubytovanie</a></li>
+          <li><a href="lokalita.html">Lokalita</a></li>
+          <li><a href="cennik.html">Cenník</a></li>
+          <li><a href="rezervacia.html">Rezervácia</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <main>
-        <div class="container">
-            <h1 class="page-title">Ubytovanie</h1>
-            <p class="page-subtitle">Priestranné a útulné priestory pre váš perfektný pobyt v Tatrách</p>
+  <main id="obsah">
 
-            <div class="content-section">
-                <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=800" alt="Posteľ v horskom štýle" class="content-image">
-                <div class="content-text">
-                    <h2>Samostatné poschodie</h2>
-                    <p>Ponúkame celé poschodie so samostatným vstupom, ktoré je možné prenajať ako celok pre väčšie skupiny, alebo formou samostatných izieb pre páry a menšie rodiny.</p>
-                    <p>Každá izba je vybavená kvalitným nábytkom, posteľnou bielizňou a všetkým potrebným pre pohodlný pobyt.</p>
-                    <ul>
-                        <li>Priestranné spálne</li>
-                        <li>Moderná kúpeľňa</li>
-                        <li>Spoločná kuchyňa s kompletným vybavením</li>
-                        <li>TV v každej z izieb a Wi-Fi pripojenie</li>
-                        <li>Balkón s výhľadom na hory</li>
-                    </ul>
-                </div>
-            </div>
+    <!-- TEXT: nadpis stránky -->
+    <section class="page-head">
+      <div class="container">
+        <h1>Ubytovanie</h1>
+        <p class="lead">Priestranné a útulné priestory pre váš perfektný pobyt v Tatrách</p>
+      </div>
+    </section>
 
-            <h2 style="font-family: var(--font-display); font-size: 2.5rem; text-align: center; margin: 5rem 0 3rem; color: var(--color-primary);">Vybavenie</h2>
-
-            <div class="features">
-                <div class="feature-card">
-                    <div class="feature-icon">🛏️</div>
-                    <h3>Pohodlné postele</h3>
-                    <p>Kvalitné matrace a čisté posteľné obliečky pre dokonalý spánok po celom dni strávenom v horách.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🍳</div>
-                    <h3>Vybavená kuchyňa</h3>
-                    <p>Kuchynská linka s chladničkou, dvojplatničkou, rýchlovarnou kanvicou, mikrovlnnou rúrou a všetkým potrebným riadom.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🚿</div>
-                    <h3>Kúpeľňa</h3>
-                    <p>Súčašťou každej izby je samostatná kúpeľňa so sprchovacím kútom, toaletou, osuškami a základným toaletným vybavením.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">📺</div>
-                    <h3>Zábava</h3>
-                    <p>Televízor so základnou programovou ponukou a Wi-Fi pripojenie pre pohodlné večery.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🔥</div>
-                    <h3>Kúrenie</h3>
-                    <p>Efektívne vykurovanie v každej izbe pre maximálny komfort počas chladnejších mesiacov.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🧺</div>
-                    <h3>Pranie</h3>
-                    <p>Možnosť využiť práčku pre dlhšie pobyty (na dohodu).</p>
-                </div>
-            </div>
-
-            <div class="content-section" style="margin-top: 5rem;">
-                <div class="content-text">
-                    <h2>Typy izieb</h2>
-                    <p><strong>Dvojlôžková izba</strong> - priestranná izba s manželskou posteľou, vhodná pre páry.</p>
-                    <p><strong>Trojlôžková izba</strong> - izba s možnosťou troch postelí, ideálna pre rodiny s deťmi alebo priateľov.</p>
-                    <p><strong>Celé poschodie</strong> - možnosť prenájmu celého poschodia pre skupiny až 8 osôb, s kompletným súkromím.</p>
-                </div>
-                <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=800" alt="Útulná izba" class="content-image">
-            </div>
-
-            <div style="text-align: center; margin: 5rem 0;">
-                <h2 style="font-family: var(--font-display); font-size: 2.5rem; margin-bottom: 2rem; color: var(--color-primary);">Zaujalo vás to?</h2>
-                <p style="font-size: 1.15rem; margin-bottom: 2rem; color: var(--color-text-light);">Pozrite si náš cenník a zistite, kedy môžete k nám zavítať.</p>
-                <a href="cennik.html" class="cta-button">Zobraziť cenník</a>
-            </div>
+    <!-- =========================================================
+         TEXT: Samostatné poschodie
+         FOTKA: fotky/izba-so-satnikom.jpg
+         ========================================================= -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container split">
+        <figure class="split-media">
+          <img src="fotky/izba-so-satnikom.jpg" alt="Podkrovná izba s drevenými trámami, manželskou posteľou, pohovkou a vstavanou skriňou" width="1600" height="900" loading="lazy">
+        </figure>
+        <div>
+          <h2>Samostatné poschodie</h2>
+          <p>Ponúkame celé poschodie so samostatným vstupom, ktoré je možné prenajať ako celok pre väčšie skupiny, alebo formou samostatných izieb pre páry a menšie rodiny.</p>
+          <p>Každá izba je vybavená kvalitným nábytkom, posteľnou bielizňou a všetkým potrebným pre pohodlný pobyt.</p>
+          <ul class="peak-list">
+            <li>Priestranné spálne</li>
+            <li>Moderná kúpeľňa</li>
+            <li>Spoločná kuchyňa s kompletným vybavením</li>
+            <li>TV v každej z izieb a Wi-Fi pripojenie</li>
+            <li>Balkón s výhľadom na hory</li>
+          </ul>
         </div>
-    </main>
+      </div>
+    </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Vila Falco</h3>
-                <p>Súkromné ubytovanie<br>
-                Horný Smokovec<br>
-                Vysoké Tatry, Slovensko</p>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Rýchle odkazy</h3>
-                <a href="ubytovanie.html">Ubytovanie</a>
-                <a href="lokalita.html">Lokalita</a>
-                <a href="cennik.html">Cenník</a>
-                <a href="rezervacia.html">Rezervácia</a>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Kontakt</h3>
-                <p>Email: info@vilafalco.sk<br>
-                Tel: +421 XXX XXX XXX</p>
-            </div>
+    <!-- =========================================================
+         TEXT: Vybavenie (šesť položiek)
+         ========================================================= -->
+    <div class="ridge ridge--to-mist" aria-hidden="true"></div>
+    <section class="section section--mist">
+      <div class="container">
+        <h2 class="section-title">Vybavenie</h2>
+        <div class="item-grid item-grid--3">
+          <div class="item">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 37V12M5 29h38v8M43 29v-6a5 5 0 0 0-5-5H20v11"/><circle cx="12.5" cy="22" r="3.5"/></svg>
+            <h3>Pohodlné postele</h3>
+            <p>Kvalitné matrace a čisté posteľné obliečky pre dokonalý spánok po celom dni strávenom v horách.</p>
+          </div>
+          <div class="item">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="19" cy="27" r="11"/><path d="M30 27h13M14 6c0 3 3 3 3 6M21 6c0 3 3 3 3 6"/></svg>
+            <h3>Vybavená kuchyňa</h3>
+            <p>Kuchynská linka s chladničkou, dvojplatničkou, rýchlovarnou kanvicou, mikrovlnnou rúrou a všetkým potrebným riadom.</p>
+          </div>
+          <div class="item">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 43V13a7 7 0 0 1 14 0"/><path d="M17 19h14l-3-5h-8z"/><path d="M20 25v2M24 25v3M28 25v2M22 31v2M26 31v2"/></svg>
+            <h3>Kúpeľňa</h3>
+            <p>Súčasťou každej izby je samostatná kúpeľňa so sprchovacím kútom, toaletou, osuškami a základným toaletným vybavením.</p>
+          </div>
+          <div class="item">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="9" width="36" height="25" rx="2"/><path d="M17 42h14M24 34v8"/></svg>
+            <h3>Zábava</h3>
+            <p>Televízor so základnou programovou ponukou a Wi-Fi pripojenie pre pohodlné večery.</p>
+          </div>
+          <div class="item">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 10v28M19 10v28M27 10v28M35 10v28M6 15h36M6 33h36"/></svg>
+            <h3>Kúrenie</h3>
+            <p>Efektívne vykurovanie v každej izbe pre maximálny komfort počas chladnejších mesiacov.</p>
+          </div>
+          <div class="item">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="5" width="30" height="38" rx="3"/><circle cx="24" cy="27" r="9"/><path d="M14 11h6"/></svg>
+            <h3>Pranie</h3>
+            <p>Možnosť využiť práčku pre dlhšie pobyty (na dohodu).</p>
+          </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2024 Vila Falco. Všetky práva vyhradené.</p>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TEXT: Typy izieb
+         FOTKA: fotky/izba-rodinna.jpg
+         ========================================================= -->
+    <section class="section">
+      <div class="container split split--reverse">
+        <figure class="split-media">
+          <img src="fotky/izba-rodinna.jpg" alt="Rodinná izba s manželskou posteľou a prístelkou, okrúhlym stolíkom a televízorom" width="1600" height="900" loading="lazy">
+        </figure>
+        <div>
+          <h2>Typy izieb</h2>
+          <p><strong>Dvojlôžková izba</strong> – priestranná izba s manželskou posteľou, vhodná pre páry.</p>
+          <p><strong>Trojlôžková izba</strong> – izba s možnosťou troch postelí, ideálna pre rodiny s deťmi alebo priateľov.</p>
+          <p><strong>Celé poschodie</strong> – možnosť prenájmu celého poschodia pre skupiny až 8 osôb, s kompletným súkromím.</p>
         </div>
-    </footer>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         FOTOGALÉRIA – fotky sú v priečinku fotky/
+         Novú fotku pridáte skopírovaním jedného riadku <figure>
+         ========================================================= -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <h2 class="section-title">Fotogaléria</h2>
+        <div class="photo-grid">
+          <figure><img src="fotky/izba-s-balkonom.jpg" alt="Izba s manželskou posteľou, prístelkou, sedením a dverami na balkón" width="1600" height="900" loading="lazy"></figure>
+          <figure><img src="fotky/izba-svetla.jpg" alt="Svetlá izba s manželskou posteľou, strešným oknom a balkónom" width="1600" height="900" loading="lazy"></figure>
+          <figure><img src="fotky/izba-s-sedenim.jpg" alt="Izba s rozkladacou pohovkou, konferenčným stolíkom a televízorom" width="1600" height="900" loading="lazy"></figure>
+          <figure><img src="fotky/izba-so-satnikom.jpg" alt="Izba s manželskou posteľou, veľkou vstavanou skriňou a vstupom do kúpeľne" width="1600" height="900" loading="lazy"></figure>
+          <figure><img src="fotky/izba-rodinna.jpg" alt="Rodinná izba s manželskou posteľou, prístelkou, stolíkom a televízorom" width="1600" height="900" loading="lazy"></figure>
+          <figure><img src="fotky/kuchyna.jpg" alt="Spoločná kuchyňa s varnou doskou, mikrovlnkou a rýchlovarnou kanvicou" width="1600" height="900" loading="lazy"></figure>
+          <figure><img src="fotky/kuchyna-jedalen.jpg" alt="Jedálenský kút s lavicou a stoličkami pod strešným oknom" width="1600" height="900" loading="lazy"></figure>
+          <figure><img src="fotky/kupelna-oranzova.jpg" alt="Kúpeľňa so sprchovacím kútom, umývadlom a toaletou" width="1600" height="900" loading="lazy"></figure>
+          <figure><img src="fotky/kupelna-modra.jpg" alt="Kúpeľňa v modrých obkladoch so sprchovacím kútom, umývadlom a toaletou" width="900" height="1600" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEXT: výzva na konci stránky -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container cta-block">
+        <h2>Zaujalo vás to?</h2>
+        <p>Pozrite si náš cenník a zistite, kedy môžete k nám zavítať.</p>
+        <div class="button-row">
+          <a href="cennik.html" class="btn btn-primary">Zobraziť cenník</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       PÄTIČKA – rovnaká na všetkých stránkach.
+       Kontakty upravte tu (a v rovnakej časti ostatných stránok).
+       ========================================================= -->
+  <div class="ridge ridge--to-blue" aria-hidden="true"></div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="vila-falco-badge.svg" alt="Logo Vila Falco" class="footer-badge" width="200" height="174" loading="lazy">
+          <p class="footer-name">Vila Falco</p>
+          <p class="footer-tagline">Váš výhľad na Tatry</p>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">Kde nás nájdete</h2>
+          <p>Súkromné ubytovanie<br>Horný Smokovec<br>Vysoké Tatry, Slovensko</p>
+        </div>
+
+        <nav aria-label="Rýchle odkazy">
+          <h2 class="footer-heading">Rýchle odkazy</h2>
+          <ul class="footer-links">
+            <li><a href="ubytovanie.html">Ubytovanie</a></li>
+            <li><a href="lokalita.html">Lokalita</a></li>
+            <li><a href="cennik.html">Cenník</a></li>
+            <li><a href="rezervacia.html">Rezervácia</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer-heading">Kontakt</h2>
+          <p>
+            <a href="tel:+421905997137">+421 905 997 137</a><br>
+            <a href="mailto:info@vilafalco.sk">info@vilafalco.sk</a>
+          </p>
+        </div>
+      </div>
+
+      <p class="footer-bottom">&copy; 2026 Vila Falco. Všetky práva vyhradené.</p>
+    </div>
+  </footer>
 </body>
 </html>

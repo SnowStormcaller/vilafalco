@@ -1,119 +1,254 @@
 <!DOCTYPE html>
-<html lang="sk">
+<html lang="sk" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vila Falco - Súkromné ubytovanie vo Vysokých Tatrách</title>
-    <meta name="description" content="Vila Falco ponúka príjemné a pokojné súkromné ubytovanie v Hornom Smokovci, v srdci Vysokých Tatier.">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- =========================================================
+       SEO: názov a popis tejto stránky (zobrazuje Google)
+       ========================================================= -->
+  <title>Vila Falco – súkromné ubytovanie v Hornom Smokovci, Vysoké Tatry</title>
+  <meta name="description" content="Vila Falco ponúka príjemné a pokojné súkromné ubytovanie v Hornom Smokovci, v srdci Vysokých Tatier.">
+  <link rel="canonical" href="https://vilafalco.sk/">
+
+  <!-- Náhľad pri zdieľaní odkazu (Facebook, WhatsApp, Messenger…) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:site_name" content="Vila Falco">
+  <meta property="og:title" content="Vila Falco – Váš výhľad na Tatry">
+  <meta property="og:description" content="Vila Falco ponúka príjemné a pokojné súkromné ubytovanie v Hornom Smokovci, v srdci Vysokých Tatier.">
+  <meta property="og:url" content="https://vilafalco.sk/">
+  <meta property="og:image" content="https://vilafalco.sk/fotky/vila-falco-dom.jpg">
+
+  <!-- Ikony stránky (favicon) -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#2E4A5E">
+
+  <!-- Písma a štýly -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="nav-container">
-        <nav>
-            <a href="index.html" class="logo">Vila Falco</a>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Domov</a></li>
-                <li><a href="ubytovanie.html">Ubytovanie</a></li>
-                <li><a href="lokalita.html">Lokalita</a></li>
-                <li><a href="cennik.html">Cenník</a></li>
-                <li><a href="rezervacia.html">Rezervácia</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
-    </div>
+  <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
 
+  <!-- =========================================================
+       HLAVIČKA – rovnaká na všetkých stránkach.
+       Pri zmene menu ju upravte na každej stránke.
+       aria-current="page" označuje stránku, na ktorej ste.
+       ========================================================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="Vila Falco, Horný Smokovec – úvodná stránka">
+        <img src="vila-falco-badge.svg" alt="" class="brand-badge" width="200" height="174">
+        <span class="brand-text" aria-hidden="true">
+          <span class="brand-name">Vila Falco</span>
+          <span class="brand-place">Horný Smokovec</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="hlavne-menu">
+        <span class="menu-toggle-bars" aria-hidden="true"></span>
+        Menu
+      </button>
+
+      <nav id="hlavne-menu" class="main-nav" aria-label="Hlavné menu">
+        <ul>
+          <li><a href="index.html" aria-current="page">Domov</a></li>
+          <li><a href="ubytovanie.html">Ubytovanie</a></li>
+          <li><a href="lokalita.html">Lokalita</a></li>
+          <li><a href="cennik.html">Cenník</a></li>
+          <li><a href="rezervacia.html">Rezervácia</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="obsah">
+
+    <!-- =========================================================
+         TEXT: Úvod (hero)
+         FOTKA: fotky/vila-falco-dom.jpg
+         ========================================================= -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>Vila Falco</h1>
-            <div class="hero-subtitle">Vysoké Tatry · Horný Smokovec</div>
-            <p>Príjemné a pokojné súkromné ubytovanie v srdci Vysokých Tatier. Ideálne pre rodiny, páry aj turistov hľadajúcich ticho, pohodlie a výbornú polohu.</p>
-            <a href="rezervacia.html" class="cta-button">Rezervovať pobyt</a>
+      <div class="container hero-grid">
+        <div>
+          <p class="hero-place">Horný Smokovec, Vysoké Tatry</p>
+          <h1>Váš výhľad na Tatry</h1>
+          <p class="lead">Príjemné a pokojné súkromné ubytovanie v srdci Vysokých Tatier. Ideálne pre rodiny, páry aj turistov hľadajúcich ticho, pohodlie a výbornú polohu.</p>
+          <div class="button-row">
+            <a href="rezervacia.html" class="btn btn-primary">Rezervovať pobyt</a>
+            <a href="ubytovanie.html" class="btn btn-secondary">Pozrieť ubytovanie</a>
+          </div>
         </div>
+        <figure class="hero-photo">
+          <img src="fotky/vila-falco-dom.jpg"
+               alt="Vila Falco v Hornom Smokovci – dom s príjazdovou cestou a parkoviskom, okolo smreky a zeleň"
+               width="1385" height="779" fetchpriority="high">
+        </figure>
+      </div>
     </section>
 
-    <main>
-        <div class="container">
-            <div class="features">
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">🏔️</div>
-                    <h3>Pokojná lokalita</h3>
-                    <p>Uprostred prírody Vysokých Tatier, ďaleko od hluku mesta. Ideálne miesto pre relaxáciu a oddych.</p>
-                </div>
-                
-                <div class="feature-card fade-in" style="animation-delay: 0.1s;">
-                    <div class="feature-icon">🚪</div>
-                    <h3>Samostatný vstup</h3>
-                    <p>Celé poschodie s vlastným vstupom zabezpečuje súkromie a pohodlie pre všetkých hostí.</p>
-                </div>
-                
-                <div class="feature-card fade-in" style="animation-delay: 0.2s;">
-                    <div class="feature-icon">🚗</div>
-                    <h3>Parkovanie</h3>
-                    <p>Bezplatné parkovanie priamo pri dome pre maximálne pohodlie vašej dovolenky.</p>
-                </div>
-                
-                <div class="feature-card fade-in" style="animation-delay: 0.3s;">
-                    <div class="feature-icon">🥾</div>
-                    <h3>Turistické trasy</h3>
-                    <p>Výborná dostupnosť k najkrajším turistickým trasám a lyžiarskym strediskám Tatier.</p>
-                </div>
-            </div>
+    <!-- =========================================================
+         TEXT: Štyri výhody
+         ========================================================= -->
+    <section class="section" style="padding-top: 0;" aria-labelledby="vyhody-nadpis">
+      <div class="container">
+        <h2 id="vyhody-nadpis" class="visually-hidden">Prečo sa vám u nás bude páčiť</h2>
+        <div class="features">
 
-            <div class="content-section">
-                <div class="content-text">
-                    <h2>Váš útulný domov v Tatrách</h2>
-                    <p>Vila Falco sa nachádza v malebnej časti Horného Smokovca, kde sa spája tatranská príroda s pohodlím moderného ubytovania. Ponúkame samostatné poschodie, ktoré môžete prenajať ako celok alebo formou jednotlivých izieb.</p>
-                    <p>Naše ubytovanie je ideálne pre rodiny s deťmi, páry hľadajúce romantický únik do prírody, alebo skupiny priateľov túžiacich po aktívnom pobyte v horách.</p>
-                    <ul>
-                        <li>Blízkosť centra Starého Smokovca</li>
-                        <li>Priamy prístup k turistickým chodníkom</li>
-                        <li>Kúsok od lanovky na Hrebienok</li>
-                        <li>Tiché a pokojné okolie</li>
-                        <li>Moderné vybavenie</li>
-                    </ul>
-                </div>
-                <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=800" alt="Horský interiér" class="content-image">
-            </div>
+          <div class="feature">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="36" cy="11" r="4"/><path d="M4 40 18 17l8 12 6-8 12 19z"/></svg>
+            <h3>Pokojná lokalita</h3>
+            <p>Uprostred prírody Vysokých Tatier, ďaleko od hluku mesta. Ideálne miesto pre relaxáciu a oddych.</p>
+          </div>
 
-            <div class="content-section" style="grid-template-columns: 1fr; text-align: center; margin-top: 6rem;">
-                <div>
-                    <h2 style="font-size: 3rem; margin-bottom: 2rem;">Prečo práve Vila Falco?</h2>
-                    <p style="max-width: 800px; margin: 0 auto 3rem; font-size: 1.15rem;">
-                        Kombinácia ideálnej polohy, moderného vybavenia a osobného prístupu robí z nášho ubytovania perfektné miesto pre vašu dovolenku v Tatrách. Či už plánujete letné túry alebo zimnú lyžovačku, Vila Falco vám poskytne pohodlie a súkromie, ktoré potrebujete.
-                    </p>
-                    <a href="ubytovanie.html" class="cta-button">Pozrieť ubytovanie</a>
-                </div>
-            </div>
-        </div>
-    </main>
+          <div class="feature">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M14 42V7h20v35M8 42h32"/><circle cx="29" cy="25" r="1.6" fill="currentColor"/></svg>
+            <h3>Samostatný vstup</h3>
+            <p>Celé poschodie s vlastným vstupom zabezpečuje súkromie a pohodlie pre všetkých hostí.</p>
+          </div>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Vila Falco</h3>
-                <p>Súkromné ubytovanie<br>
-                Horný Smokovec<br>
-                Vysoké Tatry, Slovensko</p>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Rýchle odkazy</h3>
-                <a href="ubytovanie.html">Ubytovanie</a>
-                <a href="lokalita.html">Lokalita</a>
-                <a href="cennik.html">Cenník</a>
-                <a href="rezervacia.html">Rezervácia</a>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Kontakt</h3>
-                <p>Email: info@vilafalco.sk<br>
-                Tel: +421 XXX XXX XXX</p>
-            </div>
+          <div class="feature">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="5" width="28" height="28" rx="4"/><path d="M20 27V12h6a4.5 4.5 0 0 1 0 9h-6M24 33v10"/></svg>
+            <h3>Parkovanie</h3>
+            <p>Bezplatné parkovanie priamo pri dome pre maximálne pohodlie vašej dovolenky.</p>
+          </div>
+
+          <div class="feature">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 42c9-3 7-11 15-13s13-7 10-15" stroke-dasharray="3 4"/><path d="M32 4v10M32 4l8 3-8 3"/></svg>
+            <h3>Turistické trasy</h3>
+            <p>Výborná dostupnosť k najkrajším turistickým trasám a lyžiarskym strediskám Tatier.</p>
+          </div>
+
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2024 Vila Falco. Všetky práva vyhradené.</p>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TEXT: Váš útulný domov v Tatrách
+         FOTKA: fotky/izba-s-balkonom.jpg
+         ========================================================= -->
+    <div class="ridge ridge--to-mist" aria-hidden="true"></div>
+    <section class="section section--mist">
+      <div class="container split">
+        <div>
+          <h2>Váš útulný domov v Tatrách</h2>
+          <p>Vila Falco sa nachádza v malebnej časti Horného Smokovca, kde sa spája tatranská príroda s pohodlím moderného ubytovania. Ponúkame samostatné poschodie, ktoré môžete prenajať ako celok alebo formou jednotlivých izieb.</p>
+          <p>Naše ubytovanie je ideálne pre rodiny s deťmi, páry hľadajúce romantický únik do prírody, alebo skupiny priateľov túžiacich po aktívnom pobyte v horách.</p>
+          <ul class="peak-list">
+            <li>Blízkosť centra Starého Smokovca</li>
+            <li>Priamy prístup k turistickým chodníkom</li>
+            <li>Kúsok od lanovky na Hrebienok</li>
+            <li>Tiché a pokojné okolie</li>
+            <li>Moderné vybavenie</li>
+          </ul>
         </div>
-    </footer>
+        <figure class="split-media">
+          <img src="fotky/izba-s-balkonom.jpg"
+               alt="Svetlá podkrovná izba s manželskou posteľou, drevenými trámami, stolíkom a dverami na balkón"
+               width="1600" height="900" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TEXT: Príbeh názvu
+         ========================================================= -->
+    <div class="ridge ridge--to-blue ridge--on-mist" aria-hidden="true"></div>
+    <section class="story" aria-labelledby="pribeh-nadpis">
+      <div class="container story-grid">
+        <img src="vila-falco-badge.svg" alt="" class="story-badge" width="200" height="174" loading="lazy">
+        <div>
+          <h2 id="pribeh-nadpis">Sokol nad dolinou</h2>
+          <p class="story-text">Falco, sokol, bdie nad dolinou zhora. Vila Falco je vaša vyhliadka vo Vysokých Tatrách: útulná základňa, kde máte hory priamo za dverami.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TEXT: Prečo práve Vila Falco? + malá galéria
+         FOTKY: fotky/izba-svetla.jpg, fotky/kuchyna.jpg, fotky/kupelna-oranzova.jpg
+         ========================================================= -->
+    <section class="section">
+      <div class="container">
+        <div class="intro">
+          <h2>Prečo práve Vila Falco?</h2>
+          <p>Kombinácia ideálnej polohy, moderného vybavenia a osobného prístupu robí z nášho ubytovania perfektné miesto pre vašu dovolenku v Tatrách. Či už plánujete letné túry alebo zimnú lyžovačku, Vila Falco vám poskytne pohodlie a súkromie, ktoré potrebujete.</p>
+        </div>
+
+        <div class="gallery">
+          <figure>
+            <img src="fotky/izba-svetla.jpg" alt="Podkrovná izba s manželskou posteľou, televízorom a dverami na drevený balkón" width="1600" height="900" loading="lazy">
+          </figure>
+          <figure>
+            <img src="fotky/kuchyna.jpg" alt="Spoločná kuchyňa s varnou doskou, mikrovlnkou, rýchlovarnou kanvicou a jedálenským kútom" width="1600" height="900" loading="lazy">
+          </figure>
+          <figure>
+            <img src="fotky/kupelna-oranzova.jpg" alt="Kúpeľňa so sprchovacím kútom, umývadlom a toaletou" width="1600" height="900" loading="lazy">
+          </figure>
+        </div>
+
+        <!-- CENA na úvodnej stránke – pri zmene cenníka upravte aj tu -->
+        <div class="price-strip">
+          <div>
+            <h2>Férové ceny</h2>
+            <p>Od <strong>30 €</strong> za osobu a noc, deti od 2 do 15 rokov so zľavou 50 %.</p>
+          </div>
+          <a href="cennik.html" class="btn btn-secondary">Zobraziť cenník</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       PÄTIČKA – rovnaká na všetkých stránkach.
+       Kontakty upravte tu (a v rovnakej časti ostatných stránok).
+       ========================================================= -->
+  <div class="ridge ridge--to-blue" aria-hidden="true"></div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="vila-falco-badge.svg" alt="Logo Vila Falco" class="footer-badge" width="200" height="174" loading="lazy">
+          <p class="footer-name">Vila Falco</p>
+          <p class="footer-tagline">Váš výhľad na Tatry</p>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">Kde nás nájdete</h2>
+          <p>Súkromné ubytovanie<br>Horný Smokovec<br>Vysoké Tatry, Slovensko</p>
+        </div>
+
+        <nav aria-label="Rýchle odkazy">
+          <h2 class="footer-heading">Rýchle odkazy</h2>
+          <ul class="footer-links">
+            <li><a href="ubytovanie.html">Ubytovanie</a></li>
+            <li><a href="lokalita.html">Lokalita</a></li>
+            <li><a href="cennik.html">Cenník</a></li>
+            <li><a href="rezervacia.html">Rezervácia</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer-heading">Kontakt</h2>
+          <p>
+            <a href="tel:+421905997137">+421 905 997 137</a><br>
+            <a href="mailto:info@vilafalco.sk">info@vilafalco.sk</a>
+          </p>
+        </div>
+      </div>
+
+      <p class="footer-bottom">&copy; 2026 Vila Falco. Všetky práva vyhradené.</p>
+    </div>
+  </footer>
 </body>
 </html>

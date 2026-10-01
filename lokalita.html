@@ -1,182 +1,266 @@
 <!DOCTYPE html>
-<html lang="sk">
+<html lang="sk" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lokalita - Vila Falco</title>
-    <meta name="description" content="Horný Smokovec v srdci Vysokých Tatier - ideálne miesto pre vašu letnú aj zimnú dovolenku.">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- =========================================================
+       SEO: názov a popis tejto stránky (zobrazuje Google)
+       ========================================================= -->
+  <title>Lokalita – Horný Smokovec, Vysoké Tatry | Vila Falco</title>
+  <meta name="description" content="Horný Smokovec v srdci Vysokých Tatier – ideálne miesto pre vašu letnú aj zimnú dovolenku.">
+  <link rel="canonical" href="https://vilafalco.sk/lokalita.html">
+
+  <!-- Náhľad pri zdieľaní odkazu (Facebook, WhatsApp, Messenger…) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:site_name" content="Vila Falco">
+  <meta property="og:title" content="Lokalita – Horný Smokovec">
+  <meta property="og:description" content="Horný Smokovec v srdci Vysokých Tatier – ideálne miesto pre vašu letnú aj zimnú dovolenku.">
+  <meta property="og:url" content="https://vilafalco.sk/lokalita.html">
+  <meta property="og:image" content="https://vilafalco.sk/fotky/vila-falco-dom.jpg">
+
+  <!-- Ikony stránky (favicon) -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#2E4A5E">
+
+  <!-- Písma a štýly -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="nav-container">
-        <nav>
-            <a href="index.html" class="logo">Vila Falco</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Domov</a></li>
-                <li><a href="ubytovanie.html">Ubytovanie</a></li>
-                <li><a href="lokalita.html" class="active">Lokalita</a></li>
-                <li><a href="cennik.html">Cenník</a></li>
-                <li><a href="rezervacia.html">Rezervácia</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
+  <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
+
+  <!-- =========================================================
+       HLAVIČKA – rovnaká na všetkých stránkach.
+       Pri zmene menu ju upravte na každej stránke.
+       aria-current="page" označuje stránku, na ktorej ste.
+       ========================================================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="Vila Falco, Horný Smokovec – úvodná stránka">
+        <img src="vila-falco-badge.svg" alt="" class="brand-badge" width="200" height="174">
+        <span class="brand-text" aria-hidden="true">
+          <span class="brand-name">Vila Falco</span>
+          <span class="brand-place">Horný Smokovec</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="hlavne-menu">
+        <span class="menu-toggle-bars" aria-hidden="true"></span>
+        Menu
+      </button>
+
+      <nav id="hlavne-menu" class="main-nav" aria-label="Hlavné menu">
+        <ul>
+          <li><a href="index.html">Domov</a></li>
+          <li><a href="ubytovanie.html">Ubytovanie</a></li>
+          <li><a href="lokalita.html" aria-current="page">Lokalita</a></li>
+          <li><a href="cennik.html">Cenník</a></li>
+          <li><a href="rezervacia.html">Rezervácia</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <main>
-        <div class="container">
-            <h1 class="page-title">Lokalita</h1>
-            <p class="page-subtitle">Horný Smokovec - klenot Vysokých Tatier</p>
+  <main id="obsah">
 
-            <div class="content-section">
-                <div class="content-text">
-                    <h2>Horný Smokovec</h2>
-                    <p>Vila Falco sa nachádza v malebnej časti Vysokých Tatier, v Hornom Smokovci. Táto lokalita je ideálnym východiskovým bodom pre turistiku v lete aj lyžovanie v zime.</p>
-                    <p>Obec je známa svojou bohatou históriou, krásnymi horskými panorámami a výbornou dostupnosťou k najkrajším miestam Tatier. Či už ste náročný turista alebo len milovník prírody, Horný Smokovec vám ponúkne nezabudnuteľné zážitky.</p>
-                    <ul>
-                        <li>Centrum Starého Smokovca - 20 min chôdzou</li>
-                        <li>Lanovka na Hrebienok - 25 min chôdzou</li>
-                        <li>Tatranská Lomnica - 7 min autom</li>
-                        <li>Štrbské Pleso - 20 min autom</li>
-                        <li>Poprad - 25 min autom</li>
-                    </ul>
-                </div>
-                <img src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?q=80&w=800" alt="Vysoké Tatry" class="content-image">
-            </div>
+    <!-- TEXT: nadpis stránky -->
+    <section class="page-head">
+      <div class="container">
+        <h1>Lokalita</h1>
+        <p class="lead">Horný Smokovec – klenot Vysokých Tatier</p>
+      </div>
+    </section>
 
-            <h2 style="font-family: var(--font-display); font-size: 2.5rem; text-align: center; margin: 5rem 0 3rem; color: var(--color-primary);">Atrakcie v okolí</h2>
-
-            <div class="features">
-                <div class="feature-card">
-                    <div class="feature-icon">⛰️</div>
-                    <h3>Hrebienok</h3>
-                    <p>Obľúbené turistické centrum dostupné lanovkou alebo pešou túrou. Výborné výhľady a reštaurácie.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🏔️</div>
-                    <h3>Lomnický štít</h3>
-                    <p>Druhý najvyšší vrch Slovenska s vyhliadkovou plošinou a raritnou lanovkou.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🏊</div>
-                    <h3>AquaCity Poprad</h3>
-                    <p>Moderný aquapark s termálnymi bazénmi, saunami a zábavou pre celú rodinu.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">⛷️</div>
-                    <h3>Lyžiarske strediská</h3>
-                    <p>Tatranská Lomnica, Štrbské Pleso a ďalšie strediská v blízkom okolí.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🥾</div>
-                    <h3>Turistické chodníky</h3>
-                    <p>Desiatky značených turistických trás rôznej náročnosti priamo z obce.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🏰</div>
-                    <h3>Kultúrne pamiatky</h3>
-                    <p>Spišský hrad, Levoča a ďalšie UNESCO lokality v regióne Spiš.</p>
-                </div>
-            </div>
-
-            <div class="content-section" style="margin-top: 5rem; grid-template-columns: 1fr;">
-                <div class="content-text">
-                    <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem;">Letné aktivity</h2>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
-                        <div>
-                            <h3 style="color: var(--color-accent); margin-bottom: 1rem;">🚶 Turistika</h3>
-                            <p>Stovky kilometrov značených chodníkov pre všetky úrovne náročnosti.</p>
-                        </div>
-                        <div>
-                            <h3 style="color: var(--color-accent); margin-bottom: 1rem;">🚵 Cyklistika</h3>
-                            <p>Horské aj rodinné cyklotrasy s možnosťou požičania bicyklov.</p>
-                        </div>
-                        <div>
-                            <h3 style="color: var(--color-accent); margin-bottom: 1rem;">🧗 Horolezectvo</h3>
-                            <p>Via ferraty a lezecké lokality pre odvážnych.</p>
-                        </div>
-                        <div>
-                            <h3 style="color: var(--color-accent); margin-bottom: 1rem;">🏊 Vodné športy</h3>
-                            <p>Pleso Štrbské a aquaparky v okolí.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content-section" style="margin-top: 5rem; grid-template-columns: 1fr;">
-                <div class="content-text">
-                    <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem;">Zimné aktivity</h2>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
-                        <div>
-                            <h3 style="color: var(--color-accent); margin-bottom: 1rem;">⛷️ Zjazdové lyžovanie</h3>
-                            <p>Moderné lyžiarske strediská s kvalitnou úpravou tratí.</p>
-                        </div>
-                        <div>
-                            <h3 style="color: var(--color-accent); margin-bottom: 1rem;">🎿 Bežecké lyžovanie</h3>
-                            <p>Upravované bežecké trate v nádhernom prostredí.</p>
-                        </div>
-                        <div>
-                            <h3 style="color: var(--color-accent); margin-bottom: 1rem;">🏂 Snowboarding</h3>
-                            <p>Snowparky a freeride zóny pre nadšencov.</p>
-                        </div>
-                        <div>
-                            <h3 style="color: var(--color-accent); margin-bottom: 1rem;">❄️ Zimná turistika</h3>
-                            <p>Snežnicové túry a ľadové vodopády.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content-section" style="margin-top: 5rem;">
-                <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=800" alt="Tatranské panoráma" class="content-image">
-                <div class="content-text">
-                    <h2>Doprava</h2>
-                    <p><strong>Autom:</strong> Vila Falco má vlastné parkovisko priamo pri dome. Diaľnica D1 je vzdialená len 20 km.</p>
-                    <p><strong>Vlakom:</strong> Železničná stanica Starý Smokovec je 5 minút chôdzou. Priame spojenie do Popradu, Košíc a Bratislavy.</p>
-                    <p><strong>Autobusom:</strong> Pravidelné autobusové spojenia do Popradu, Taterskej Lomnice a ostatných tatranských obcí.</p>
-                    <p><strong>Letecky:</strong> Letisko Poprad-Tatry je vzdialené 20 km, medzinárodné letisko Košice 100 km.</p>
-                </div>
-            </div>
-
-            <div style="text-align: center; margin: 5rem 0;">
-                <h2 style="font-family: var(--font-display); font-size: 2.5rem; margin-bottom: 2rem; color: var(--color-primary);">Pripravení navštíviť Tatry?</h2>
-                <p style="font-size: 1.15rem; margin-bottom: 2rem; color: var(--color-text-light);">Skontrolujte dostupnosť a rezervujte si váš pobyt.</p>
-                <a href="rezervacia.html" class="cta-button">Rezervovať teraz</a>
-            </div>
+    <!-- =========================================================
+         TEXT: Horný Smokovec + vzdialenosti
+         FOTKA: zatiaľ chýba – nahraďte blok <div class="placeholder"> riadkom:
+         <img src="fotky/NAZOV.jpg" alt="POPIS FOTKY" width="1600" height="900" loading="lazy">
+         ========================================================= -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container split">
+        <div>
+          <h2>Horný Smokovec</h2>
+          <p>Vila Falco sa nachádza v malebnej časti Vysokých Tatier, v Hornom Smokovci. Táto lokalita je ideálnym východiskovým bodom pre turistiku v lete aj lyžovanie v zime.</p>
+          <p>Obec je známa svojou bohatou históriou, krásnymi horskými panorámami a výbornou dostupnosťou k najkrajším miestam Tatier. Či už ste náročný turista alebo len milovník prírody, Horný Smokovec vám ponúkne nezabudnuteľné zážitky.</p>
+          <ul class="peak-list">
+            <li>Centrum Starého Smokovca – 20 min chôdzou</li>
+            <li>Lanovka na Hrebienok – 25 min chôdzou</li>
+            <li>Tatranská Lomnica – 7 min autom</li>
+            <li>Štrbské Pleso – 20 min autom</li>
+            <li>Poprad – 25 min autom</li>
+          </ul>
         </div>
-    </main>
+        <div class="split-media">
+          <div class="placeholder">Sem patrí fotka: výhľad na Tatry z okolia vily alebo z balkóna</div>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Vila Falco</h3>
-                <p>Súkromné ubytovanie<br>
-                Horný Smokovec<br>
-                Vysoké Tatry, Slovensko</p>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Rýchle odkazy</h3>
-                <a href="ubytovanie.html">Ubytovanie</a>
-                <a href="lokalita.html">Lokalita</a>
-                <a href="cennik.html">Cenník</a>
-                <a href="rezervacia.html">Rezervácia</a>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Kontakt</h3>
-                <p>Email: info@vilafalco.sk<br>
-                Tel: +421 XXX XXX XXX</p>
-            </div>
+    <!-- =========================================================
+         TEXT: Atrakcie v okolí
+         ========================================================= -->
+    <div class="ridge ridge--to-mist" aria-hidden="true"></div>
+    <section class="section section--mist">
+      <div class="container">
+        <h2 class="section-title">Atrakcie v okolí</h2>
+        <div class="item-grid item-grid--3">
+          <div class="item">
+            <h3>Hrebienok</h3>
+            <p>Obľúbené turistické centrum dostupné lanovkou alebo pešou túrou. Výborné výhľady a reštaurácie.</p>
+          </div>
+          <div class="item">
+            <h3>Lomnický štít</h3>
+            <p>Druhý najvyšší vrch Slovenska s vyhliadkovou plošinou a raritnou lanovkou.</p>
+          </div>
+          <div class="item">
+            <h3>AquaCity Poprad</h3>
+            <p>Moderný aquapark s termálnymi bazénmi, saunami a zábavou pre celú rodinu.</p>
+          </div>
+          <div class="item">
+            <h3>Lyžiarske strediská</h3>
+            <p>Tatranská Lomnica, Štrbské Pleso a ďalšie strediská v blízkom okolí.</p>
+          </div>
+          <div class="item">
+            <h3>Turistické chodníky</h3>
+            <p>Desiatky značených turistických trás rôznej náročnosti priamo z obce.</p>
+          </div>
+          <div class="item">
+            <h3>Kultúrne pamiatky</h3>
+            <p>Spišský hrad, Levoča a ďalšie UNESCO lokality v regióne Spiš.</p>
+          </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2024 Vila Falco. Všetky práva vyhradené.</p>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TEXT: Letné a zimné aktivity
+         ========================================================= -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Letné aktivity</h2>
+        <div class="item-grid item-grid--4 item-grid--rule">
+          <div class="item">
+            <h3>Turistika</h3>
+            <p>Stovky kilometrov značených chodníkov pre všetky úrovne náročnosti.</p>
+          </div>
+          <div class="item">
+            <h3>Cyklistika</h3>
+            <p>Horské aj rodinné cyklotrasy s možnosťou požičania bicyklov.</p>
+          </div>
+          <div class="item">
+            <h3>Horolezectvo</h3>
+            <p>Via ferraty a lezecké lokality pre odvážnych.</p>
+          </div>
+          <div class="item">
+            <h3>Vodné športy</h3>
+            <p>Pleso Štrbské a aquaparky v okolí.</p>
+          </div>
         </div>
-    </footer>
+
+        <h2 class="section-title" style="margin-top: 4rem;">Zimné aktivity</h2>
+        <div class="item-grid item-grid--4 item-grid--rule">
+          <div class="item">
+            <h3>Zjazdové lyžovanie</h3>
+            <p>Moderné lyžiarske strediská s kvalitnou úpravou tratí.</p>
+          </div>
+          <div class="item">
+            <h3>Bežecké lyžovanie</h3>
+            <p>Upravované bežecké trate v nádhernom prostredí.</p>
+          </div>
+          <div class="item">
+            <h3>Snowboarding</h3>
+            <p>Snowparky a freeride zóny pre nadšencov.</p>
+          </div>
+          <div class="item">
+            <h3>Zimná turistika</h3>
+            <p>Snežnicové túry a ľadové vodopády.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TEXT: Doprava
+         FOTKA: fotky/vila-falco-dom.jpg
+         ========================================================= -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container split split--reverse">
+        <figure class="split-media">
+          <img src="fotky/vila-falco-dom.jpg" alt="Príjazdová cesta a parkovisko priamo pri Vile Falco" width="1385" height="779" loading="lazy">
+        </figure>
+        <div>
+          <h2>Doprava</h2>
+          <p><strong>Autom:</strong> Vila Falco má vlastné parkovisko priamo pri dome. Diaľnica D1 je vzdialená len 20 km.</p>
+          <p><strong>Vlakom:</strong> Železničná stanica Starý Smokovec je 5 minút chôdzou. Priame spojenie do Popradu, Košíc a Bratislavy.</p>
+          <p><strong>Autobusom:</strong> Pravidelné autobusové spojenia do Popradu, Tatranskej Lomnice a ostatných tatranských obcí.</p>
+          <p><strong>Letecky:</strong> Letisko Poprad-Tatry je vzdialené 20 km, medzinárodné letisko Košice 100 km.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEXT: výzva na konci stránky -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container cta-block">
+        <h2>Pripravení navštíviť Tatry?</h2>
+        <p>Skontrolujte dostupnosť a rezervujte si váš pobyt.</p>
+        <div class="button-row">
+          <a href="rezervacia.html" class="btn btn-primary">Rezervovať teraz</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       PÄTIČKA – rovnaká na všetkých stránkach.
+       Kontakty upravte tu (a v rovnakej časti ostatných stránok).
+       ========================================================= -->
+  <div class="ridge ridge--to-blue" aria-hidden="true"></div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="vila-falco-badge.svg" alt="Logo Vila Falco" class="footer-badge" width="200" height="174" loading="lazy">
+          <p class="footer-name">Vila Falco</p>
+          <p class="footer-tagline">Váš výhľad na Tatry</p>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">Kde nás nájdete</h2>
+          <p>Súkromné ubytovanie<br>Horný Smokovec<br>Vysoké Tatry, Slovensko</p>
+        </div>
+
+        <nav aria-label="Rýchle odkazy">
+          <h2 class="footer-heading">Rýchle odkazy</h2>
+          <ul class="footer-links">
+            <li><a href="ubytovanie.html">Ubytovanie</a></li>
+            <li><a href="lokalita.html">Lokalita</a></li>
+            <li><a href="cennik.html">Cenník</a></li>
+            <li><a href="rezervacia.html">Rezervácia</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer-heading">Kontakt</h2>
+          <p>
+            <a href="tel:+421905997137">+421 905 997 137</a><br>
+            <a href="mailto:info@vilafalco.sk">info@vilafalco.sk</a>
+          </p>
+        </div>
+      </div>
+
+      <p class="footer-bottom">&copy; 2026 Vila Falco. Všetky práva vyhradené.</p>
+    </div>
+  </footer>
 </body>
 </html>

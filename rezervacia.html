@@ -1,229 +1,271 @@
 <!DOCTYPE html>
-<html lang="sk">
+<html lang="sk" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rezervácia - Vila Falco</title>
-    <meta name="description" content="Rezervujte si pobyt vo Vile Falco jednoducho online.">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- =========================================================
+       SEO: názov a popis tejto stránky (zobrazuje Google)
+       ========================================================= -->
+  <title>Rezervácia pobytu – Vila Falco, Vysoké Tatry</title>
+  <meta name="description" content="Rezervujte si pobyt vo Vile Falco jednoducho online.">
+  <link rel="canonical" href="https://vilafalco.sk/rezervacia.html">
+
+  <!-- Náhľad pri zdieľaní odkazu (Facebook, WhatsApp, Messenger…) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:site_name" content="Vila Falco">
+  <meta property="og:title" content="Rezervácia – Vila Falco">
+  <meta property="og:description" content="Rezervujte si pobyt vo Vile Falco jednoducho online.">
+  <meta property="og:url" content="https://vilafalco.sk/rezervacia.html">
+  <meta property="og:image" content="https://vilafalco.sk/fotky/izba-rodinna.jpg">
+
+  <!-- Ikony stránky (favicon) -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#2E4A5E">
+
+  <!-- Písma a štýly -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="nav-container">
-        <nav>
-            <a href="index.html" class="logo">Vila Falco</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Domov</a></li>
-                <li><a href="ubytovanie.html">Ubytovanie</a></li>
-                <li><a href="lokalita.html">Lokalita</a></li>
-                <li><a href="cennik.html">Cenník</a></li>
-                <li><a href="rezervacia.html" class="active">Rezervácia</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
+  <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
+
+  <!-- =========================================================
+       HLAVIČKA – rovnaká na všetkých stránkach.
+       Pri zmene menu ju upravte na každej stránke.
+       aria-current="page" označuje stránku, na ktorej ste.
+       ========================================================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="Vila Falco, Horný Smokovec – úvodná stránka">
+        <img src="vila-falco-badge.svg" alt="" class="brand-badge" width="200" height="174">
+        <span class="brand-text" aria-hidden="true">
+          <span class="brand-name">Vila Falco</span>
+          <span class="brand-place">Horný Smokovec</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="hlavne-menu">
+        <span class="menu-toggle-bars" aria-hidden="true"></span>
+        Menu
+      </button>
+
+      <nav id="hlavne-menu" class="main-nav" aria-label="Hlavné menu">
+        <ul>
+          <li><a href="index.html">Domov</a></li>
+          <li><a href="ubytovanie.html">Ubytovanie</a></li>
+          <li><a href="lokalita.html">Lokalita</a></li>
+          <li><a href="cennik.html">Cenník</a></li>
+          <li><a href="rezervacia.html" aria-current="page">Rezervácia</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <main>
-        <div class="container">
-            <h1 class="page-title">Rezervácia</h1>
-            <p class="page-subtitle">Rezervujte si svoj pobyt v niekoľkých krokoch</p>
+  <main id="obsah">
 
-            <div class="contact-form">
-                <h2 style="font-family: var(--font-display); font-size: 2rem; text-align: center; margin-bottom: 2rem; color: var(--color-primary);">Rezervačný formulár</h2>
-                
-                <form action="#" method="POST" onsubmit="handleSubmit(event)">
-                    <div class="form-group">
-                        <label for="name">Meno a priezvisko *</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
+    <!-- TEXT: nadpis stránky -->
+    <section class="page-head">
+      <div class="container">
+        <h1>Rezervácia</h1>
+        <p class="lead">Rezervujte si svoj pobyt v niekoľkých krokoch</p>
+      </div>
+    </section>
 
-                    <div class="form-group">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
+    <!-- =========================================================
+         REZERVAČNÝ FORMULÁR
+         Odosiela sa cez Formspree. Po vytvorení formulára vo Formspree
+         nahraďte VAS-FORMSPREE-ID vaším kódom (napr. xqazbcde).
+         Texty po odoslaní upravíte v data-success a data-error.
+         ========================================================= -->
+    <section class="section" style="padding-top: 0.5rem;">
+      <div class="container">
+        <div class="form-card">
+          <h2>Rezervačný formulár</h2>
 
-                    <div class="form-group">
-                        <label for="phone">Telefón *</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
+          <form action="https://formspree.io/f/VAS-FORMSPREE-ID" method="POST" data-formspree
+                data-success="Ďakujeme! Vašu správu sme prijali a ozveme sa vám do 24 hodín." data-error="Správu sa nepodarilo odoslať. Skúste to prosím znova, alebo nám zavolajte na +421 905 997 137 či napíšte na info@vilafalco.sk.">
+            <input type="hidden" name="_subject" value="Nová rezervácia – Vila Falco">
+            <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
 
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-                        <div class="form-group">
-                            <label for="checkin">Dátum príchodu *</label>
-                            <input type="date" id="checkin" name="checkin" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="checkout">Dátum odchodu *</label>
-                            <input type="date" id="checkout" name="checkout" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="accommodation">Typ ubytovania *</label>
-                        <select id="accommodation" name="accommodation" required>
-                            <option value="">Vyberte typ ubytovania</option>
-                            <option value="double">Dvojlôžková izba (€45/noc)</option>
-                            <option value="triple">Trojlôžková izba (€60/noc)</option>
-                            <option value="floor">Celé poschodie (€120/noc)</option>
-                        </select>
-                    </div>
-
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-                        <div class="form-group">
-                            <label for="adults">Počet dospelých *</label>
-                            <select id="adults" name="adults" required>
-                                <option value="">Vyberte</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="children">Počet detí</label>
-                            <select id="children" name="children">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="pets">Domáce zvieratá</label>
-                        <select id="pets" name="pets">
-                            <option value="no">Nie</option>
-                            <option value="yes">Áno (príplatok €10/noc)</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Správa alebo špeciálne požiadavky</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Napríklad požiadavky na izbu, doplňujúce služby, otázky..."></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <label style="display: flex; align-items: center; text-transform: none; gap: 0.5rem;">
-                            <input type="checkbox" required style="width: auto;">
-                            <span>Súhlasím so spracovaním osobných údajov *</span>
-                        </label>
-                    </div>
-
-                    <button type="submit" class="submit-btn">Odoslať rezerváciu</button>
-                </form>
-
-                <p style="text-align: center; margin-top: 2rem; color: var(--color-text-light); font-size: 0.9rem;">
-                    Po odoslaní formulára vás budeme kontaktovať do 24 hodín pre potvrdenie rezervácie a platobné detaily.
-                </p>
+            <div class="field">
+              <label for="name">Meno a priezvisko *</label>
+              <input type="text" id="name" name="meno" autocomplete="name" required>
             </div>
 
-            <div style="background: linear-gradient(135deg, rgba(44, 62, 80, 0.05), rgba(61, 90, 76, 0.05)); padding: 3rem; margin: 4rem 0;">
-                <h2 style="font-family: var(--font-display); font-size: 2rem; text-align: center; margin-bottom: 2rem; color: var(--color-primary);">Ako prebieha rezervácia?</h2>
-                
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 900px; margin: 0 auto;">
-                    <div style="text-align: center;">
-                        <div style="width: 60px; height: 60px; background: var(--color-accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1rem;">1</div>
-                        <h3 style="color: var(--color-primary); margin-bottom: 0.5rem;">Odošlite formulár</h3>
-                        <p style="color: var(--color-text-light);">Vyplňte všetky potrebné údaje a odošlite rezervačný formulár.</p>
-                    </div>
-                    
-                    <div style="text-align: center;">
-                        <div style="width: 60px; height: 60px; background: var(--color-accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1rem;">2</div>
-                        <h3 style="color: var(--color-primary); margin-bottom: 0.5rem;">Potvrdenie</h3>
-                        <p style="color: var(--color-text-light);">Do 24 hodín vás kontaktujeme s potvrdením dostupnosti.</p>
-                    </div>
-                    
-                    <div style="text-align: center;">
-                        <div style="width: 60px; height: 60px; background: var(--color-accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1rem;">3</div>
-                        <h3 style="color: var(--color-primary); margin-bottom: 0.5rem;">Záloha</h3>
-                        <p style="color: var(--color-text-light);">Uhraďte zálohu 30% na potvrdenie rezervácie.</p>
-                    </div>
-                    
-                    <div style="text-align: center;">
-                        <div style="width: 60px; height: 60px; background: var(--color-accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1rem;">4</div>
-                        <h3 style="color: var(--color-primary); margin-bottom: 0.5rem;">Pripravení!</h3>
-                        <p style="color: var(--color-text-light);">Tešíme sa na vašu návštevu vo Vile Falco!</p>
-                    </div>
-                </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="phone">Telefón *</label>
+                <input type="tel" id="phone" name="telefon" autocomplete="tel" required>
+              </div>
             </div>
 
-            <div class="features" style="margin-top: 4rem;">
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Preferujete telefón?</h3>
-                    <p>Zavolajte nám priamo na +421 XXX XXX XXX (Po-Ne 9:00-20:00)</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">✉️</div>
-                    <h3>Email</h3>
-                    <p>Napíšte nám na info@vilafalco.sk a odpovieme do 24 hodín.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🚫</div>
-                    <h3>Flexibilné stornovanie</h3>
-                    <p>Bezplatné stornovanie až do 7 dní pred príchodom.</p>
-                </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="checkin">Dátum príchodu *</label>
+                <input type="date" id="checkin" name="prichod" required>
+              </div>
+              <div class="field">
+                <label for="checkout">Dátum odchodu *</label>
+                <input type="date" id="checkout" name="odchod" required>
+              </div>
             </div>
+
+            <div class="field">
+              <label for="accommodation">Typ ubytovania *</label>
+              <select id="accommodation" name="typ_ubytovania" required>
+                <option value="">Vyberte typ ubytovania</option>
+                <option value="Dvojlôžková izba">Dvojlôžková izba</option>
+                <option value="Trojlôžková izba">Trojlôžková izba</option>
+                <option value="Celé poschodie">Celé poschodie</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="adults">Počet dospelých *</label>
+                <select id="adults" name="pocet_dospelych" required>
+                  <option value="">Vyberte</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="children">Počet detí</label>
+                <select id="children" name="pocet_deti">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="pets">Domáce zvieratá</label>
+              <select id="pets" name="zvierata">
+                <option value="Nie">Nie</option>
+                <option value="Áno">Áno (príplatok 10 € / noc)</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Správa alebo špeciálne požiadavky</label>
+              <textarea id="message" name="sprava" rows="5" placeholder="Napríklad požiadavky na izbu, doplňujúce služby, otázky…"></textarea>
+            </div>
+
+            <div class="field-check">
+              <input type="checkbox" id="consent" name="suhlas" value="Áno" required>
+              <label for="consent">Súhlasím so spracovaním osobných údajov *</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Odoslať rezerváciu</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <p class="form-hint">Po odoslaní formulára vás budeme kontaktovať do 24 hodín pre potvrdenie rezervácie a platobné detaily.</p>
         </div>
-    </main>
+      </div>
+    </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Vila Falco</h3>
-                <p>Súkromné ubytovanie<br>
-                Horný Smokovec<br>
-                Vysoké Tatry, Slovensko</p>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Rýchle odkazy</h3>
-                <a href="ubytovanie.html">Ubytovanie</a>
-                <a href="lokalita.html">Lokalita</a>
-                <a href="cennik.html">Cenník</a>
-                <a href="rezervacia.html">Rezervácia</a>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Kontakt</h3>
-                <p>Email: info@vilafalco.sk<br>
-                Tel: +421 XXX XXX XXX</p>
-            </div>
+    <!-- =========================================================
+         TEXT: Ako prebieha rezervácia (4 kroky)
+         ========================================================= -->
+    <div class="ridge ridge--to-mist" aria-hidden="true"></div>
+    <section class="section section--mist">
+      <div class="container">
+        <h2 class="section-title">Ako prebieha rezervácia?</h2>
+        <ol class="steps">
+          <li><h3>Odošlite formulár</h3><p>Vyplňte všetky potrebné údaje a odošlite rezervačný formulár.</p></li>
+          <li><h3>Potvrdenie</h3><p>Do 24 hodín vás kontaktujeme s potvrdením dostupnosti.</p></li>
+          <li><h3>Záloha</h3><p>Uhraďte zálohu 30% na potvrdenie rezervácie.</p></li>
+          <li><h3>Pripravení!</h3><p>Tešíme sa na vašu návštevu vo Vile Falco!</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TEXT: Iné možnosti kontaktu
+         ========================================================= -->
+    <section class="section">
+      <div class="container">
+        <div class="item-grid item-grid--3">
+          <div class="item">
+            <h3>Preferujete telefón?</h3>
+            <p>Zavolajte nám priamo na <a href="tel:+421905997137">+421 905 997 137</a> (Po–Ne 9:00–20:00).</p>
+          </div>
+          <div class="item">
+            <h3>Email</h3>
+            <p>Napíšte nám na <a href="mailto:info@vilafalco.sk">info@vilafalco.sk</a> a odpovieme do 24 hodín.</p>
+          </div>
+          <div class="item">
+            <h3>Flexibilné stornovanie</h3>
+            <p>Bezplatné stornovanie až do 7 dní pred príchodom.</p>
+          </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2024 Vila Falco. Všetky práva vyhradené.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       PÄTIČKA – rovnaká na všetkých stránkach.
+       Kontakty upravte tu (a v rovnakej časti ostatných stránok).
+       ========================================================= -->
+  <div class="ridge ridge--to-blue" aria-hidden="true"></div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="vila-falco-badge.svg" alt="Logo Vila Falco" class="footer-badge" width="200" height="174" loading="lazy">
+          <p class="footer-name">Vila Falco</p>
+          <p class="footer-tagline">Váš výhľad na Tatry</p>
         </div>
-    </footer>
 
-    <script>
-        function handleSubmit(event) {
-            event.preventDefault();
-            alert('Ďakujeme za vašu rezerváciu! V skutočnom nasadení by ste teraz mali nastaviť odoslanie formulára na váš email alebo rezervačný systém. Budeme vás kontaktovať do 24 hodín.');
-            // V skutočnosti tu pripojíte formulár na váš backend alebo email službu
-        }
+        <div>
+          <h2 class="footer-heading">Kde nás nájdete</h2>
+          <p>Súkromné ubytovanie<br>Horný Smokovec<br>Vysoké Tatry, Slovensko</p>
+        </div>
 
-        // Nastavenie minimálneho dátumu na dnešok
-        document.addEventListener('DOMContentLoaded', function() {
-            const today = new Date().toISOString().split('T')[0];
-            document.getElementById('checkin').setAttribute('min', today);
-            document.getElementById('checkout').setAttribute('min', today);
+        <nav aria-label="Rýchle odkazy">
+          <h2 class="footer-heading">Rýchle odkazy</h2>
+          <ul class="footer-links">
+            <li><a href="ubytovanie.html">Ubytovanie</a></li>
+            <li><a href="lokalita.html">Lokalita</a></li>
+            <li><a href="cennik.html">Cenník</a></li>
+            <li><a href="rezervacia.html">Rezervácia</a></li>
+          </ul>
+        </nav>
 
-            // Aktualizovať minimálny checkout dátum po výbere check-in
-            document.getElementById('checkin').addEventListener('change', function() {
-                const checkinDate = new Date(this.value);
-                checkinDate.setDate(checkinDate.getDate() + 1);
-                const minCheckout = checkinDate.toISOString().split('T')[0];
-                document.getElementById('checkout').setAttribute('min', minCheckout);
-            });
-        });
-    </script>
+        <div>
+          <h2 class="footer-heading">Kontakt</h2>
+          <p>
+            <a href="tel:+421905997137">+421 905 997 137</a><br>
+            <a href="mailto:info@vilafalco.sk">info@vilafalco.sk</a>
+          </p>
+        </div>
+      </div>
+
+      <p class="footer-bottom">&copy; 2026 Vila Falco. Všetky práva vyhradené.</p>
+    </div>
+  </footer>
 </body>
 </html>

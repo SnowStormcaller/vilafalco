@@ -1,160 +1,218 @@
 <!DOCTYPE html>
-<html lang="sk">
+<html lang="sk" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cenník - Vila Falco</title>
-    <meta name="description" content="Cenník ubytovania Vila Falco - transparentné ceny bez skrytých poplatkov.">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- =========================================================
+       SEO: názov a popis tejto stránky (zobrazuje Google)
+       ========================================================= -->
+  <title>Cenník – férové ceny ubytovania | Vila Falco</title>
+  <meta name="description" content="Cenník ubytovania Vila Falco – transparentné ceny bez skrytých poplatkov.">
+  <link rel="canonical" href="https://vilafalco.sk/cennik.html">
+
+  <!-- Náhľad pri zdieľaní odkazu (Facebook, WhatsApp, Messenger…) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:site_name" content="Vila Falco">
+  <meta property="og:title" content="Cenník – Vila Falco">
+  <meta property="og:description" content="Cenník ubytovania Vila Falco – transparentné ceny bez skrytých poplatkov.">
+  <meta property="og:url" content="https://vilafalco.sk/cennik.html">
+  <meta property="og:image" content="https://vilafalco.sk/fotky/izba-svetla.jpg">
+
+  <!-- Ikony stránky (favicon) -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#2E4A5E">
+
+  <!-- Písma a štýly -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="nav-container">
-        <nav>
-            <a href="index.html" class="logo">Vila Falco</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Domov</a></li>
-                <li><a href="ubytovanie.html">Ubytovanie</a></li>
-                <li><a href="lokalita.html">Lokalita</a></li>
-                <li><a href="cennik.html" class="active">Cenník</a></li>
-                <li><a href="rezervacia.html">Rezervácia</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
+  <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
+
+  <!-- =========================================================
+       HLAVIČKA – rovnaká na všetkých stránkach.
+       Pri zmene menu ju upravte na každej stránke.
+       aria-current="page" označuje stránku, na ktorej ste.
+       ========================================================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="Vila Falco, Horný Smokovec – úvodná stránka">
+        <img src="vila-falco-badge.svg" alt="" class="brand-badge" width="200" height="174">
+        <span class="brand-text" aria-hidden="true">
+          <span class="brand-name">Vila Falco</span>
+          <span class="brand-place">Horný Smokovec</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="hlavne-menu">
+        <span class="menu-toggle-bars" aria-hidden="true"></span>
+        Menu
+      </button>
+
+      <nav id="hlavne-menu" class="main-nav" aria-label="Hlavné menu">
+        <ul>
+          <li><a href="index.html">Domov</a></li>
+          <li><a href="ubytovanie.html">Ubytovanie</a></li>
+          <li><a href="lokalita.html">Lokalita</a></li>
+          <li><a href="cennik.html" aria-current="page">Cenník</a></li>
+          <li><a href="rezervacia.html">Rezervácia</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="obsah">
+
+    <!-- TEXT: nadpis stránky -->
+    <section class="page-head">
+      <div class="container narrow">
+        <h1>Cenník</h1>
+        <p class="lead">Platné celoročne. Vysoké Tatry, Horný Smokovec</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container narrow">
+
+        <!-- =========================================================
+             CENY – čísla meníte priamo v tomto bloku.
+             Pozor: cena „od 30 €“ je aj na úvodnej stránke (index.html).
+             ========================================================= -->
+        <div class="price-card">
+          <h2>Základná cena</h2>
+          <p class="price-main"><strong>30 €</strong> <span>/ osoba / noc</span></p>
+          <p class="price-note">Pri jednonocovom pobyte: 40 € / osoba / noc</p>
+
+          <h3 style="margin-top: 2rem; font-size: 1.35rem;">Deti</h3>
+          <ul class="price-rows">
+            <li><span>Dieťa do 2 rokov</span> <strong>Zdarma *</strong></li>
+            <li><span>Dieťa od 2 do 15 rokov</span> <strong>50 % zľava</strong></li>
+          </ul>
+          <p class="small-note">* Bez nároku na lôžko</p>
+
+          <div class="price-extras">
+            <div class="price-extra">
+              <h3>Domáci maznáčik</h3>
+              <p><strong>10 € / noc</strong><br>Po predchádzajúcej dohode</p>
+            </div>
+            <div class="price-extra">
+              <h3>Zimné prázdniny</h3>
+              <p><strong>+ 5 € / osoba / noc</strong><br>Príplatok počas vianočných a jarných školských prázdnin</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================================================
+             TEXT: Dôležité informácie
+             ========================================================= -->
+        <h2 class="section-title">Dôležité informácie</h2>
+        <div class="item-grid item-grid--rule">
+          <div class="item">
+            <h3>Dĺžka pobytu</h3>
+            <p>Odporúčame pobyt aspoň na 2 noci. Jednonocový pobyt je možný za 40 € / osoba / noc.</p>
+          </div>
+          <div class="item">
+            <h3>Check-in a check-out</h3>
+            <p>Check-in: od 14:00<br>Check-out: do 10:00<br>Iné časy na dohodu.</p>
+          </div>
+          <div class="item">
+            <h3>Platba</h3>
+            <p>Akceptujeme hotovosť aj bankový prevod. Záloha 30 % je potrebná pri rezervácii.</p>
+          </div>
+          <div class="item">
+            <h3>Storno podmienky</h3>
+            <p>Bezplatné stornovanie do 7 dní pred príchodom. Neskoršie stornovanie: strata zálohy.</p>
+          </div>
+          <div class="item">
+            <h3>Domáce zvieratá</h3>
+            <p>Domáce zvieratá sú vítané po predchádzajúcej dohode. Príplatok 10 € / noc.</p>
+          </div>
+          <div class="item">
+            <h3>V cene zahrnuté</h3>
+            <p>Posteľná bielizeň, osušky, Wi-Fi, parkovanie, energie, upratovanie po odchode.</p>
+          </div>
+        </div>
+
+        <!-- =========================================================
+             TEXT: Zľavy
+             ========================================================= -->
+        <h2 class="section-title" style="margin-top: 4rem;">Zľavy</h2>
+        <div class="item-grid item-grid--rule">
+          <div class="item">
+            <h3>Dlhodobé pobyty</h3>
+            <p>Pri pobyte dlhšom ako 7 nocí poskytujeme 10 % zľavu z celkovej sumy.</p>
+          </div>
+          <div class="item">
+            <h3>Vernostný program</h3>
+            <p>Opakovaní hostia získavajú 10 % zľavu na ďalšie pobyty.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEXT: výzva na konci stránky -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container cta-block">
+        <h2>Vyberte si termín</h2>
+        <p>Pošlite nám nezáväznú rezerváciu a do 24 hodín vám potvrdíme dostupnosť.</p>
+        <div class="button-row">
+          <a href="rezervacia.html" class="btn btn-primary">Rezervovať pobyt</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       PÄTIČKA – rovnaká na všetkých stránkach.
+       Kontakty upravte tu (a v rovnakej časti ostatných stránok).
+       ========================================================= -->
+  <div class="ridge ridge--to-blue" aria-hidden="true"></div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="vila-falco-badge.svg" alt="Logo Vila Falco" class="footer-badge" width="200" height="174" loading="lazy">
+          <p class="footer-name">Vila Falco</p>
+          <p class="footer-tagline">Váš výhľad na Tatry</p>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">Kde nás nájdete</h2>
+          <p>Súkromné ubytovanie<br>Horný Smokovec<br>Vysoké Tatry, Slovensko</p>
+        </div>
+
+        <nav aria-label="Rýchle odkazy">
+          <h2 class="footer-heading">Rýchle odkazy</h2>
+          <ul class="footer-links">
+            <li><a href="ubytovanie.html">Ubytovanie</a></li>
+            <li><a href="lokalita.html">Lokalita</a></li>
+            <li><a href="cennik.html">Cenník</a></li>
+            <li><a href="rezervacia.html">Rezervácia</a></li>
+          </ul>
         </nav>
+
+        <div>
+          <h2 class="footer-heading">Kontakt</h2>
+          <p>
+            <a href="tel:+421905997137">+421 905 997 137</a><br>
+            <a href="mailto:info@vilafalco.sk">info@vilafalco.sk</a>
+          </p>
+        </div>
+      </div>
+
+      <p class="footer-bottom">&copy; 2026 Vila Falco. Všetky práva vyhradené.</p>
     </div>
-
-<main>
-  <div class="container">
-    <h1 class="page-title">Cenník</h1>
-    <p class="page-subtitle">Platné celoročne · Vysoké Tatry, Horný Smokovec</p>
-
-    <div style="max-width: 780px; margin: 0 auto;">
-
-      <!-- Základná cena -->
-      <div style="background: #fff; border: 1px solid rgba(212,165,116,0.3); border-radius: 4px; padding: 2.5rem; margin-bottom: 2rem; position: relative; overflow: hidden;">
-        <div style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: #d4a574;"></div>
-
-        <p style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: #d4a574; margin-bottom: 1rem;">Základná cena</p>
-        <div style="display: flex; align-items: baseline; gap: 0.4rem;">
-          <span style="font-family: var(--font-display); font-size: 3.8rem; font-weight: 600; color: var(--color-accent); line-height: 1;">30 €</span>
-          <span style="color: var(--color-text-light); font-size: 0.95rem;">/ osoba / noc</span>
-        </div>
-        <p style="font-size: 0.88rem; color: var(--color-text-light); font-style: italic; margin-top: 0.4rem; margin-bottom: 1.5rem;">Pri jednonocovom pobyte: 40 € / osoba / noc</p>
-
-        <hr style="border: none; border-top: 1px solid rgba(212,165,116,0.2); margin: 1.5rem 0;">
-
-        <p style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: #d4a574; margin-bottom: 1rem;">Deti</p>
-        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.65rem 0; border-bottom: 1px solid rgba(212,165,116,0.08);">
-          <span>Dieťa do 2 rokov</span>
-          <span style="font-family: var(--font-display); font-size: 1.25rem; color: var(--color-accent);">Zdarma *</span>
-        </div>
-        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.65rem 0;">
-          <span>Dieťa od 2 do 15 rokov</span>
-          <span style="font-family: var(--font-display); font-size: 1.25rem; color: var(--color-accent);">50 % zľava</span>
-        </div>
-        <p style="font-size: 0.8rem; color: var(--color-text-light); font-style: italic; margin-top: 0.5rem;">* Bez nároku na lôžko</p>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem;">
-          <div style="background: #f8f9fa; border: 1px solid rgba(212,165,116,0.2); border-radius: 4px; padding: 1.1rem 1.3rem;">
-            <p style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--color-text-light); margin-bottom: 0.3rem;">Domáci maznáčik</p>
-            <p style="font-family: var(--font-display); font-size: 1.5rem; color: var(--color-primary);">10 € / noc</p>
-            <p style="font-size: 0.82rem; color: var(--color-text-light);">Po predchádzajúcej dohode</p>
-          </div>
-          <div style="background: rgba(212,165,116,0.06); border: 1px solid rgba(212,165,116,0.35); border-radius: 4px; padding: 1.1rem 1.3rem;">
-            <p style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--color-text-light); margin-bottom: 0.3rem;">Zimné sviatky</p>
-            <p style="font-family: var(--font-display); font-size: 1.5rem; color: var(--color-accent);">+ 5 € / osoba / noc</p>
-            <p style="font-size: 0.82rem; color: var(--color-text-light);">Príplatok počas zimnej sezóny</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Dôležité informácie -->
-      <h2 style="font-family: var(--font-display); font-size: 1.8rem; color: var(--color-primary); margin-bottom: 1rem;">Dôležité informácie</h2>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
-
-        <div style="background: #fff; border: 1px solid rgba(212,165,116,0.2); border-radius: 4px; padding: 1.25rem 1.4rem;">
-          <p style="font-family: var(--font-display); font-size: 1.1rem; color: var(--color-primary); margin-bottom: 0.4rem;">📅 Minimálny pobyt</p>
-          <p style="font-size: 0.88rem; color: var(--color-text-light); line-height: 1.6;">Minimálna dĺžka pobytu sú 2 noci.</p>
-        </div>
-
-        <div style="background: #fff; border: 1px solid rgba(212,165,116,0.2); border-radius: 4px; padding: 1.25rem 1.4rem;">
-          <p style="font-family: var(--font-display); font-size: 1.1rem; color: var(--color-primary); margin-bottom: 0.4rem;">⏰ Check-in / Check-out</p>
-          <p style="font-size: 0.88rem; color: var(--color-text-light); line-height: 1.6;">Check-in: od 14:00<br>Check-out: do 10:00<br>Iné časy na dohodu.</p>
-        </div>
-
-        <div style="background: #fff; border: 1px solid rgba(212,165,116,0.2); border-radius: 4px; padding: 1.25rem 1.4rem;">
-          <p style="font-family: var(--font-display); font-size: 1.1rem; color: var(--color-primary); margin-bottom: 0.4rem;">💳 Platba</p>
-          <p style="font-size: 0.88rem; color: var(--color-text-light); line-height: 1.6;">Akceptujeme hotovosť aj bankový prevod. Záloha 30 % je potrebná pri rezervácii.</p>
-        </div>
-
-        <div style="background: #fff; border: 1px solid rgba(212,165,116,0.2); border-radius: 4px; padding: 1.25rem 1.4rem;">
-          <p style="font-family: var(--font-display); font-size: 1.1rem; color: var(--color-primary); margin-bottom: 0.4rem;">🚫 Storno podmienky</p>
-          <p style="font-size: 0.88rem; color: var(--color-text-light); line-height: 1.6;">Bezplatné stornovanie do 10 dní pred príchodom. Neskoršie stornovanie: strata zálohy.</p>
-        </div>
-
-        <div style="background: #fff; border: 1px solid rgba(212,165,116,0.2); border-radius: 4px; padding: 1.25rem 1.4rem;">
-          <p style="font-family: var(--font-display); font-size: 1.1rem; color: var(--color-primary); margin-bottom: 0.4rem;">🐕 Domáce zvieratá</p>
-          <p style="font-size: 0.88rem; color: var(--color-text-light); line-height: 1.6;">Domáce zvieratá sú vítané po predchádzajúcej dohode. Príplatok 10 € / noc.</p>
-        </div>
-
-        <div style="background: #fff; border: 1px solid rgba(212,165,116,0.2); border-radius: 4px; padding: 1.25rem 1.4rem;">
-          <p style="font-family: var(--font-display); font-size: 1.1rem; color: var(--color-primary); margin-bottom: 0.4rem;">📋 V cene zahrnuté</p>
-          <p style="font-size: 0.88rem; color: var(--color-text-light); line-height: 1.6;">Posteľná bielizeň, osušky, Wi-Fi, parkovanie, energie, upratovanie po odchode.</p>
-        </div>
-
-      </div>
-
-<!-- Bonusy -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 3rem;">
-
-        <div style="background: #fff; border: 1px solid rgba(212,165,116,0.2); border-radius: 4px; padding: 1.25rem 1.4rem;">
-          <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.4rem;">
-            <span style="font-size: 1rem; line-height: 1;">📅</span>
-            <span style="font-family: var(--font-display); font-size: 1.1rem; color: var(--color-primary);">Dlhodobé pobyty</span>
-          </div>
-          <p style="font-size: 0.88rem; color: var(--color-text-light); line-height: 1.6;">Pri pobyte dlhšom ako 7 nocí poskytujeme 10 % zľavu z celkovej sumy.</p>
-        </div>
-
-        <div style="background: #fff; border: 1px solid rgba(212,165,116,0.2); border-radius: 4px; padding: 1.25rem 1.4rem;">
-          <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.4rem;">
-            <span style="font-size: 1rem; line-height: 1;">🎁</span>
-            <span style="font-family: var(--font-display); font-size: 1.1rem; color: var(--color-primary);">Vernostný program</span>
-          </div>
-          <p style="font-size: 0.88rem; color: var(--color-text-light); line-height: 1.6;">Opakovaní hostia získavajú 10 % zľavu na ďalšie pobyty.</p>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Vila Falco</h3>
-                <p>Súkromné ubytovanie<br>
-                Horný Smokovec<br>
-                Vysoké Tatry, Slovensko</p>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Rýchle odkazy</h3>
-                <a href="ubytovanie.html">Ubytovanie</a>
-                <a href="lokalita.html">Lokalita</a>
-                <a href="cennik.html">Cenník</a>
-                <a href="rezervacia.html">Rezervácia</a>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Kontakt</h3>
-                <p>Email: info@vilafalco.sk<br>
-                Tel: +421 XXX XXX XXX</p>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2024 Vila Falco. Všetky práva vyhradené.</p>
-        </div>
-    </footer>
+  </footer>
 </body>
 </html>
